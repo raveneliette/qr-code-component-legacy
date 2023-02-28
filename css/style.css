@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+/* font-family: 'Outfit', sans-serif; */
+
+:root {
+    --primary-color: hsl(0, 0%, 100%); /* White */
+    --secondary-color: hsl(220, 15%, 55%); /* Grayish blue */
+    --dark-color: hsl(218, 44%, 22%); /* Dark blue */
+    --light-color: hsl(212, 45%, 89%); /* Light gray */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base styles */
+body {
+    background-color: var(--light-color);
+    font-family: 'Outfit', sans-serif;
+}
+
+img {
+    border-radius: 15px;
+    width: 100%;  
+}
+
+h1 {
+    color: var(--dark-color);
+    padding: 25px 15px 0 15px;
+    font-size: 1.6rem;
+}
+
+p {
+    color: var(--secondary-color);
+    padding: 15px 15px 30px 15px;
+    font-size: 18px;
+}
+
+/* Classes */
+.card {
+    width: 370px;
+}
+
+.card .img-container {
+    margin: 0 auto;
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+    .card {
+        width: 370px;
+    }
+}
+
+/* Mobile */
+/* @media (max-width: 500px) {
+    
+} */
